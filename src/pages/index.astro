@@ -1,16 +1,164 @@
 ---
+import Layout from '../layouts/Layout.astro';
 
+const base = import.meta.env.BASE_URL;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Dila - Environmental Health in Somaliland">
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Creating Healthier Communities in East Africa</h1>
+        <p class="hero-subtitle">Dila coordinates volunteer networks for waste collection, provides sanitary products to school-age girls, and educates communities on environmental health in Somaliland.</p>
+        <div class="hero-buttons">
+          <a href={`${base}get-involved`} class="btn">Get Involved</a>
+          <a href={`${base}programs`} class="btn btn-secondary">Our Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-4">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="stat-card">
+          <span class="stat-number">2,000+</span>
+          <span class="stat-label">Active Volunteers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5,000+</span>
+          <span class="stat-label">Students Supported</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Tons of Waste Removed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Our Approach</h2>
+      
+      <div class="grid grid-3">
+        <!-- Feature 1 -->
+        <div class="card">
+          <h3>Volunteer Cleanup Networks</h3>
+          <p>We mobilize community volunteers to lead regular cleanup efforts in neighborhoods and public spaces across Somaliland.</p>
+          <a href={`${base}programs`} class="btn mt-2">Learn More</a>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card">
+          <h3>School Support Programs</h3>
+          <p>We provide free sanitary products to school-age girls, eliminating barriers to education and reducing absence rates.</p>
+          <a href={`${base}programs`} class="btn mt-2">Learn More</a>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card">
+          <h3>Health Education</h3>
+          <p>We deliver community education on environmental health risks and prevention, reaching thousands across East Africa.</p>
+          <a href={`${base}programs`} class="btn mt-2">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Our Impact</h2>
+      <p class="text-center" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem;">
+        Every program we run creates measurable change in communities across Somaliland.
+      </p>
+
+      <div class="grid grid-2">
+        <div>
+          <h3>Measurable Results</h3>
+          <ul class="styled-list">
+            <li>95% reduction in menstruation-related school absences</li>
+            <li>25+ public areas transformed from waste sites to community spaces</li>
+            <li>100,000+ people reached through health education</li>
+            <li>30% reduction in waterborne illness in program areas</li>
+          </ul>
+          <a href={`${base}impact`} class="btn mt-2">See Full Impact</a>
+        </div>
+
+        <div>
+          <h3>Community-Driven</h3>
+          <p>Our programs are designed and led by community members. We provide training, equipment, and support—but the real work happens through local volunteers who know their communities best.</p>
+          <p>This approach creates lasting change that continues long after our direct involvement ends.</p>
+          <a href={`${base}about`} class="btn mt-2">About Our Mission</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container text-center">
+      <h2>Join Our Mission</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">
+        Whether you're in Somaliland, part of the diaspora, or an international supporter, there are many ways to contribute.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href={`${base}get-involved#volunteer`} class="btn">Volunteer</a>
+        <a href={`${base}get-involved#donate`} class="btn">Donate</a>
+        <a href={`${base}get-involved#partners`} class="btn">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+</style>

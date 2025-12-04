@@ -1,0 +1,364 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout 
+  title="Contact Dila"
+  description="Get in touch with Dila. Contact us about volunteering, partnerships, donations, or general inquiries."
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="hero-subtitle">We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Information & Form -->
+  <section class="py-4">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Contact Information -->
+        <div>
+          <h2>Get in Touch</h2>
+          <p>Whether you're interested in volunteering, partnering with us, or just want to learn more about our work, we're here to help.</p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>📧 Email</h3>
+              <p><a href="mailto:info@dilacares.org">info@dilacares.org</a></p>
+            </div>
+
+            <div class="contact-item">
+              <h3>📍 Location</h3>
+              <p>Hargeisa, Somaliland<br>East Africa</p>
+            </div>
+
+            <div class="contact-item">
+              <h3>🕒 Office Hours</h3>
+              <p>Sunday - Thursday: 8:00 AM - 5:00 PM<br>
+              Friday - Saturday: Closed</p>
+            </div>
+          </div>
+
+          <h3 style="margin-top: 2rem;">Specific Inquiries</h3>
+          <ul class="styled-list">
+            <li><strong>Volunteering:</strong> <a href="mailto:volunteer@dilacares.org">volunteer@dilacares.org</a></li>
+            <li><strong>Partnerships:</strong> <a href="mailto:partnerships@dilacares.org">partnerships@dilacares.org</a></li>
+            <li><strong>Donations:</strong> <a href="mailto:donations@dilacares.org">donations@dilacares.org</a></li>
+            <li><strong>Media & Press:</strong> <a href="mailto:press@dilacares.org">press@dilacares.org</a></li>
+            <li><strong>Schools:</strong> <a href="mailto:schools@dilacares.org">schools@dilacares.org</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry-type">
+                  <option value="">Select an option</option>
+                  <option value="volunteering">Volunteering</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="donation">Donation</option>
+                  <option value="school">School Program</option>
+                  <option value="media">Media/Press</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+
+              <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container text-center">
+      <h2>Connect With Us</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem;">Follow our work and stay updated on social media</p>
+      
+      <div class="social-grid">
+        <a href="#" class="social-card">
+          <div class="social-icon">📘</div>
+          <h3>Facebook</h3>
+          <p>Follow for program updates and success stories</p>
+        </a>
+
+        <a href="#" class="social-card">
+          <div class="social-icon">🐦</div>
+          <h3>Twitter</h3>
+          <p>Get real-time updates and news</p>
+        </a>
+
+        <a href="#" class="social-card">
+          <div class="social-icon">📸</div>
+          <h3>Instagram</h3>
+          <p>See photos from our programs</p>
+        </a>
+
+        <a href="#" class="social-card">
+          <div class="social-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>Connect with our team professionally</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Frequently Asked Questions</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How can I volunteer?</h3>
+          <p>Visit our <a href={`${base}get-involved#volunteer`}>Get Involved</a> page to learn about volunteer opportunities for local, diaspora, and international supporters.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are donations tax-deductible?</h3>
+          <p>Yes! Dila is a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the full extent allowed by law.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can my school participate?</h3>
+          <p>Email <a href="mailto:schools@dilacares.org">schools@dilacares.org</a> to learn about our School Sanitary Product Program and partnership requirements.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you accept in-kind donations?</h3>
+          <p>Yes! We accept donations of cleanup equipment, safety gear, and educational materials. Contact <a href="mailto:donations@dilacares.org">donations@dilacares.org</a> for details.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where do you operate?</h3>
+          <p>Our programs currently operate in Somaliland, with plans to expand across East Africa as resources allow.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can I stay updated?</h3>
+          <p>Subscribe to our newsletter on the <a href={`${base}get-involved`}>Get Involved</a> page or follow us on social media for regular updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container text-center">
+      <h2>Ready to Make an Impact?</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">
+        Join us in creating healthier communities across East Africa
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href={`${base}get-involved#volunteer`} class="btn">Volunteer</a>
+        <a href={`${base}get-involved#donate`} class="btn">Donate</a>
+        <a href={`${base}get-involved#partners`} class="btn">Partner</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+  }
+
+  .contact-info {
+    margin: 2rem 0;
+  }
+
+  .contact-item {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--light-blue-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--cyan);
+  }
+
+  .contact-item h3 {
+    color: var(--dila-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--light-gray);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-form-container h2 {
+    margin-top: 0;
+    color: var(--dila-blue);
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--light-gray);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--cyan);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .social-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 640px) {
+    .social-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .social-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .social-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+  }
+
+  .social-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 6px 20px rgba(0, 243, 255, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .social-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-card h3 {
+    color: var(--dila-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .faq-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .faq-item {
+    background: var(--light-blue-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--dila-blue);
+  }
+
+  .faq-item h3 {
+    color: var(--dila-blue);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .contact-form-container {
+      padding: 1.5rem;
+    }
+  }
+</style>

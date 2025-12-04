@@ -1,0 +1,353 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout 
+  title="Our Programs - Dila Environmental Health Solutions"
+  description="Learn about Dila's three core programs: volunteer cleanup networks, school sanitary product distribution, and community environmental health education."
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Programs</h1>
+      <p class="hero-subtitle">Three integrated programs creating lasting environmental health change</p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="py-4">
+    <div class="container text-center">
+      <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+        Dila operates three core programs that address environmental health from multiple angles, creating lasting change in Somaliland communities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Program 1: Volunteer Cleanup Network -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <div class="program-section">
+        <h2>1. Volunteer Cleanup Network</h2>
+        
+        <h3>The Challenge</h3>
+        <p>Urban and rural areas across Somaliland lack systematic waste management infrastructure. Accumulated waste in public spaces, markets, and residential areas creates breeding grounds for disease vectors and contributes to waterborne illness outbreaks during rainy seasons.</p>
+        
+        <h3>Our Solution</h3>
+        <p>We organize and train community volunteers to lead regular cleanup efforts in their neighborhoods. Each volunteer team receives safety equipment, waste collection tools, and training on proper disposal methods.</p>
+        
+        <div class="stat-highlight">
+          <h4>Impact So Far</h4>
+          <div class="grid grid-2">
+            <div>
+              <strong>2,000+ active volunteers</strong> across 25+ communities
+            </div>
+            <div>
+              <strong>500+ tons of waste</strong> collected and properly disposed
+            </div>
+            <div>
+              <strong>50+ cleanup events</strong> conducted annually
+            </div>
+            <div>
+              <strong>25+ public areas</strong> transformed from waste sites to usable spaces
+            </div>
+          </div>
+        </div>
+
+        <h3>How It Works</h3>
+        <div class="grid grid-2">
+          <div>
+            <h4>Assessment & Planning</h4>
+            <ul>
+              <li>Identify priority cleanup areas</li>
+              <li>Map waste accumulation points</li>
+              <li>Engage community leaders</li>
+            </ul>
+            
+            <h4>Volunteer Mobilization</h4>
+            <ul>
+              <li>Recruit local volunteers</li>
+              <li>Provide safety training</li>
+              <li>Distribute equipment</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Regular Cleanup Events</h4>
+            <ul>
+              <li>Scheduled community cleanups</li>
+              <li>Targeted area transformation</li>
+              <li>Proper waste segregation</li>
+            </ul>
+            
+            <h4>Disposal & Maintenance</h4>
+            <ul>
+              <li>Coordinate with disposal facilities</li>
+              <li>Establish maintenance schedules</li>
+              <li>Monitor area conditions</li>
+            </ul>
+          </div>
+        </div>
+
+        <img src={`${base}images/cleanup.jpg`} alt="Volunteers at cleanup event" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Program 2: School Sanitary Product Program -->
+  <section class="py-4">
+    <div class="container">
+      <div class="program-section">
+        <h2>2. School Sanitary Product Program</h2>
+        
+        <h3>The Challenge</h3>
+        <p>Research shows that up to 30% of school-age girls in Somaliland miss school during menstruation due to lack of access to affordable sanitary products. This absence leads to educational gaps, lower test scores, and increased dropout rates.</p>
+        
+        <h3>Our Solution</h3>
+        <p>We work directly with schools to provide free sanitary products to students who need them. Products are delivered monthly, distributed discreetly through school health coordinators, and accompanied by basic menstrual health education.</p>
+        
+        <div class="stat-highlight">
+          <h4>Impact So Far</h4>
+          <div class="grid grid-2">
+            <div>
+              <strong>50+ partner schools</strong> across urban and rural areas
+            </div>
+            <div>
+              <strong>5,000+ students</strong> receiving regular product support
+            </div>
+            <div>
+              <strong>95% reduction</strong> in menstruation-related absences
+            </div>
+            <div>
+              <strong>Zero dropouts</strong> attributed to sanitary product access in partner schools (2-year tracking)
+            </div>
+          </div>
+        </div>
+
+        <h3>Program Components</h3>
+        <div class="grid grid-2">
+          <div>
+            <h4>Product Delivery</h4>
+            <ul>
+              <li>Monthly school deliveries</li>
+              <li>Discreet distribution systems</li>
+              <li>Quality products from trusted suppliers</li>
+            </ul>
+            
+            <h4>Health Education</h4>
+            <ul>
+              <li>Menstrual health basics</li>
+              <li>Hygiene practices</li>
+              <li>Breaking stigma and myths</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Teacher Training</h4>
+            <ul>
+              <li>Coordinator training</li>
+              <li>Privacy protocols</li>
+              <li>Student support strategies</li>
+            </ul>
+            
+            <h4>Facility Support</h4>
+            <ul>
+              <li>Advocate for proper facilities</li>
+              <li>Water and sanitation access</li>
+              <li>Private changing areas</li>
+            </ul>
+          </div>
+        </div>
+
+        <img src={`${base}images/students.jpg`} alt="Students in classroom" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Program 3: Environmental Health Education -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <div class="program-section">
+        <h2>3. Environmental Health Education</h2>
+        
+        <h3>The Challenge</h3>
+        <p>Many communities lack basic information about how environmental factors contribute to disease transmission. Without understanding the connection between waste accumulation, water contamination, and illness, behavior change remains limited.</p>
+        
+        <h3>Our Solution</h3>
+        <p>We deliver targeted health education to community members, school groups, and local policymakers. Sessions are conducted in Somali language, use visual aids, and focus on practical actions people can take immediately.</p>
+        
+        <div class="stat-highlight">
+          <h4>Impact So Far</h4>
+          <div class="grid grid-2">
+            <div>
+              <strong>100,000+ people reached</strong> through community sessions
+            </div>
+            <div>
+              <strong>200+ education sessions</strong> delivered across communities
+            </div>
+            <div>
+              <strong>20+ policy briefings</strong> with municipal leaders
+            </div>
+            <div>
+              <strong>85% behavior change</strong> reported in follow-up surveys
+            </div>
+          </div>
+        </div>
+
+        <h3>Education Focus Areas</h3>
+        <div class="grid grid-2">
+          <div>
+            <h4>Waste & Disease</h4>
+            <ul>
+              <li>How waste attracts disease vectors</li>
+              <li>Water contamination pathways</li>
+              <li>Preventing illness transmission</li>
+            </ul>
+            
+            <h4>Water Safety</h4>
+            <ul>
+              <li>Safe water sources</li>
+              <li>Household water treatment</li>
+              <li>Storage and handling practices</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Disease Prevention</h4>
+            <ul>
+              <li>Common waterborne illnesses</li>
+              <li>Vector-borne disease risks</li>
+              <li>When to seek medical care</li>
+            </ul>
+            
+            <h4>Policy Recommendations</h4>
+            <ul>
+              <li>Municipal waste systems</li>
+              <li>Infrastructure needs</li>
+              <li>Resource allocation priorities</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Our Methods</h3>
+        <ul class="styled-list">
+          <li><strong>Community Workshops</strong> - Interactive 2-hour sessions in neighborhoods, markets, and community centers</li>
+          <li><strong>School Programs</strong> - Age-appropriate curriculum integrated into health education classes</li>
+          <li><strong>Policy Briefings</strong> - Evidence-based presentations to municipal leaders and health officials</li>
+          <li><strong>Local Language Materials</strong> - Printed guides and visual posters in Somali</li>
+          <li><strong>Radio Programs</strong> - Weekly 30-minute health education segments on local stations</li>
+        </ul>
+
+        <img src={`${base}images/education.jpg`} alt="Community education session" />
+      </div>
+    </div>
+  </section>
+
+  <!-- How Programs Work Together -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">How Programs Work Together</h2>
+      <p style="max-width: 800px; margin: 0 auto;">Our three programs create reinforcing effects:</p>
+      
+      <div class="grid grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Cleanup → Education</h3>
+          <p>Volunteers share health messages during events, reaching community members directly at cleanup sites.</p>
+        </div>
+        <div class="card">
+          <h3>Education → Sanitary Products</h3>
+          <p>Health education sessions help reduce stigma around menstruation, making girls more comfortable accessing products.</p>
+        </div>
+        <div class="card">
+          <h3>All Programs → Policy</h3>
+          <p>Combined program data provides evidence for municipal leaders to invest in permanent infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container text-center">
+      <h2>Get Involved in Our Programs</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">
+        Every program needs volunteer support, financial resources, and community partners.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href={`${base}get-involved#volunteer`} class="btn">Join as a Volunteer</a>
+        <a href={`${base}get-involved#donate`} class="btn">Support Our Programs</a>
+        <a href={`${base}get-involved#partners`} class="btn">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+  }
+
+  .program-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 6px solid var(--dila-blue);
+  }
+
+  .program-section h2 {
+    color: var(--dila-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .program-section h3 {
+    color: var(--dila-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .program-section h4 {
+    color: var(--dila-blue);
+    margin-bottom: 0.75rem;
+  }
+
+  .stat-highlight {
+    background: var(--light-blue-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cyan);
+    margin: 2rem 0;
+  }
+
+  .stat-highlight h4 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .program-section {
+      padding: 1.5rem;
+    }
+  }
+</style>

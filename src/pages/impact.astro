@@ -1,0 +1,414 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout 
+  title="Our Impact - Creating Healthier Communities"
+  description="See the measurable impact of Dila's work: thousands of volunteers mobilized, tons of waste removed, students supported, and communities transformed."
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Impact</h1>
+      <p class="hero-subtitle">Measurable change in communities across Somaliland</p>
+    </div>
+  </section>
+
+  <!-- By the Numbers -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">By the Numbers</h2>
+      <p class="text-center" style="font-size: 1.2rem; margin-bottom: 3rem;">
+        Our work creates measurable change in communities across Somaliland.
+      </p>
+
+      <div class="impact-grid">
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Tons of Waste Removed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2,000+</span>
+          <span class="stat-label">Active Volunteers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Cleanup Events Annually</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Areas Transformed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5,000+</span>
+          <span class="stat-label">Students Supported</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Partner Schools</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Absence Reduction</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100,000+</span>
+          <span class="stat-label">People Reached</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30%</span>
+          <span class="stat-label">Illness Reduction</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">85%</span>
+          <span class="stat-label">Volunteers Continue</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Policies Adopted</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Partner Organizations</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <img src={`${base}images/impact.jpg`} alt="Community impact" style="max-width: 800px; margin: 0 auto; display: block;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Success Stories</h2>
+
+      <!-- Story 1 -->
+      <div class="story-card">
+        <h3>Hargeisa Market District Transformation</h3>
+        <p>The central market district in Hargeisa had accumulated waste over years, creating health hazards and deterring customers. Local vendors reported frequent illness and declining business.</p>
+        
+        <p><strong>Our Intervention:</strong> Over three months, we mobilized 150 volunteers for weekly cleanup events, worked with municipal authorities to establish regular waste collection, and educated vendors on waste management practices.</p>
+        
+        <p><strong>Results:</strong></p>
+        <ul>
+          <li>75 tons of accumulated waste removed</li>
+          <li>40% increase in customer traffic</li>
+          <li>Zero disease outbreaks in past 18 months (previously 3-4 annually)</li>
+          <li>Vendor association now funds ongoing maintenance</li>
+          <li>Model replicated in three other market districts</li>
+        </ul>
+
+        <div class="story-quote">
+          "Before Dila's work, we struggled with rats and flies. Many vendors got sick, and customers avoided our section. Now our area is clean, business has doubled, and we're proud to work here." 
+          <br><strong>- Amina, market vendor and volunteer coordinator</strong>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="story-card">
+        <h3>Borama Girls Secondary School</h3>
+        <p>Borama Girls Secondary School reported that 30% of students missed 3-5 days of school monthly due to lack of sanitary products. This absence pattern contributed to lower test scores and two students dropping out each year.</p>
+        
+        <p><strong>Our Intervention:</strong> We partnered with the school to provide monthly sanitary products to all students who needed them, trained teachers on distribution protocols, and delivered menstrual health education sessions.</p>
+        
+        <p><strong>Results:</strong></p>
+        <ul>
+          <li>Absence rate dropped from 30% to less than 2%</li>
+          <li>Zero dropouts attributed to sanitary product access (two years running)</li>
+          <li>25% increase in female enrollment</li>
+          <li>Improved test scores across grade levels</li>
+          <li>Model expanded to 50+ schools</li>
+        </ul>
+
+        <div class="story-quote">
+          "I used to miss school every month and fall behind in my studies. Now I never miss a day. I'm the top student in my math class and planning to become an engineer." 
+          <br><strong>- Hawa, 10th grade student</strong>
+        </div>
+      </div>
+
+      <!-- Story 3 -->
+      <div class="story-card">
+        <h3>Rural Community Health Education</h3>
+        <p>Ten rural communities near Hargeisa lacked basic information about environmental health risks. Residents stored water unsafely, disposed of waste near homes, and didn't connect these practices to frequent illness.</p>
+        
+        <p><strong>Our Intervention:</strong> We conducted monthly education sessions in each community for six months, trained local health volunteers, and helped communities establish simple waste disposal areas.</p>
+        
+        <p><strong>Results:</strong></p>
+        <ul>
+          <li>85% of households changed water storage practices</li>
+          <li>Community-led waste disposal areas established in all 10 villages</li>
+          <li>50% reduction in waterborne illness reports</li>
+          <li>Health volunteers now conduct ongoing education</li>
+          <li>Three neighboring communities requested program expansion</li>
+        </ul>
+
+        <div class="story-quote">
+          "We didn't know that our water storage jars could make us sick, or that waste near homes attracted disease. Now our children are healthier, and we teach these practices to everyone who visits." 
+          <br><strong>- Elder Mohamed, community leader</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financial Transparency -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Financial Transparency</h2>
+      <p class="text-center" style="font-size: 1.1rem; margin-bottom: 2rem;">
+        We maintain transparent records of how donor funds are used.
+      </p>
+
+      <div class="financial-grid">
+        <div class="financial-item">
+          <div class="financial-percent">85%</div>
+          <strong>Program Services</strong>
+          <p>Direct program delivery</p>
+        </div>
+        <div class="financial-item">
+          <div class="financial-percent">10%</div>
+          <strong>Administration</strong>
+          <p>Operations and management</p>
+        </div>
+        <div class="financial-item">
+          <div class="financial-percent">5%</div>
+          <strong>Fundraising</strong>
+          <p>Development activities</p>
+        </div>
+      </div>
+
+      <p class="text-center" style="margin-top: 2rem;">
+        <strong>Annual Reports:</strong> <a href="#">2023 Report</a> | <a href="#">2022 Report</a> | <a href="#">2021 Report</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Recognition -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Recognition</h2>
+      <p class="text-center">Our work has been recognized by local and international organizations:</p>
+      
+      <ul class="styled-list" style="max-width: 700px; margin: 2rem auto;">
+        <li><strong>2023:</strong> Community Health Innovation Award, East Africa Health Forum</li>
+        <li><strong>2022:</strong> Environmental Leadership Recognition, Somaliland Ministry of Health</li>
+        <li><strong>2021:</strong> Youth Engagement Excellence, African Youth Foundation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Partner Testimonials -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Partner Testimonials</h2>
+
+      <div class="testimonial-quote">
+        "Dila's volunteer network model is the most effective community health intervention we've seen in Somaliland. Their data collection and reporting set the standard for NGO transparency."
+        <br><strong>- Dr. Ahmed Hassan, Ministry of Health</strong>
+      </div>
+
+      <div class="testimonial-quote">
+        "The school sanitary product program has transformed attendance patterns in our district. Girls who once missed 15% of school days now attend consistently. This single intervention may be the most cost-effective education investment we can make."
+        <br><strong>- Fatima Yusuf, District Education Director</strong>
+      </div>
+
+      <div class="testimonial-quote">
+        "We've partnered with many organizations, but Dila's approach stands out. They build local capacity instead of creating dependency, and their programs continue after they leave."
+        <br><strong>- Ibrahim Ali, Municipal Councilor, Hargeisa</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Looking Forward: 2024-2025 Goals</h2>
+
+      <div class="grid grid-3">
+        <div>
+          <h3>Expand Reach</h3>
+          <div class="goal-item">
+            <strong>Volunteer Network:</strong> Grow from 2,000 to 4,000 active volunteers across 50 communities
+          </div>
+          <div class="goal-item">
+            <strong>School Program:</strong> Add 50 more schools, supporting 10,000+ students total
+          </div>
+          <div class="goal-item">
+            <strong>Education:</strong> Reach 200,000 people through expanded community programming
+          </div>
+        </div>
+
+        <div>
+          <h3>Deepen Impact</h3>
+          <div class="goal-item">
+            <strong>Recycling Pilot:</strong> Launch plastic recycling program in three communities
+          </div>
+          <div class="goal-item">
+            <strong>Leadership Training:</strong> Develop advanced training for 100 volunteer leaders
+          </div>
+          <div class="goal-item">
+            <strong>Policy Toolkit:</strong> Create comprehensive waste management policy guide for municipalities
+          </div>
+        </div>
+
+        <div>
+          <h3>Strengthen Organization</h3>
+          <div class="goal-item">
+            <strong>Digital Platform:</strong> Launch volunteer coordination and impact tracking system
+          </div>
+          <div class="goal-item">
+            <strong>M&E Capacity:</strong> Build internal monitoring and evaluation team
+          </div>
+          <div class="goal-item">
+            <strong>Emergency Response:</strong> Develop rapid response capacity for disease outbreaks
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-4">
+    <div class="container text-center">
+      <h2>Join Our Impact</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">
+        Your support helps create healthier communities across East Africa.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href={`${base}get-involved#volunteer`} class="btn">Become a Volunteer</a>
+        <a href={`${base}get-involved#donate`} class="btn">Support Our Work</a>
+        <a href={`${base}get-involved#partners`} class="btn">Partner With Dila</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 640px) {
+    .impact-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .impact-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .story-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 6px solid var(--cyan);
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .story-card h3 {
+    color: var(--dila-blue);
+    margin-bottom: 1rem;
+  }
+
+  .story-quote {
+    font-style: italic;
+    color: var(--gray);
+    padding: 1.5rem;
+    background: var(--light-blue-bg);
+    border-left: 4px solid var(--dila-blue);
+    margin: 1.5rem 0;
+    border-radius: 6px;
+  }
+
+  .financial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .financial-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .financial-item {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--light-blue-bg);
+    border-radius: 8px;
+    border-top: 4px solid var(--dila-blue);
+  }
+
+  .financial-percent {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dila-blue);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .testimonial-quote {
+    font-style: italic;
+    padding: 2rem;
+    background: var(--light-blue-bg);
+    border-left: 4px solid var(--cyan);
+    margin: 2rem 0;
+    border-radius: 8px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .goal-item {
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    margin: 0.75rem 0;
+    border: 1px solid var(--light-gray);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+</style>

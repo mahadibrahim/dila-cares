@@ -1,14 +1,18 @@
 {
-  "name": "dila-astro",
+  "name": "dila-cares",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.4"
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.0.0"
   }
 }

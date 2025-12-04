@@ -1,0 +1,271 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout 
+  title="About Dila - Environmental Health for East Africa"
+  description="Learn about Dila's mission to create healthier, cleaner communities in East Africa through volunteer networks, sanitary product programs, and environmental health education."
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Dila</h1>
+      <p class="hero-subtitle">Creating healthier, cleaner communities through volunteer action and community-led solutions</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-4">
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h2>Our Mission</h2>
+          <p>Dila works to improve environmental health in Somaliland and across East Africa by mobilizing volunteer networks, supporting school-age girls, and educating communities on disease prevention.</p>
+          <p>We believe the most effective solutions come from within communities themselves. Our role is to provide training, resources, and coordination—empowering local volunteers to lead lasting change.</p>
+        </div>
+        <div>
+          <img src={`${base}images/volunteers-group.jpg`} alt="Dila volunteers" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Challenges We Address</h2>
+      <div class="about-grid-4">
+        <div class="challenge-card">
+          <h3>Waste Accumulation</h3>
+          <p>Lack of systematic waste management leads to health hazards and disease transmission in urban and rural areas.</p>
+        </div>
+        <div class="challenge-card">
+          <h3>Educational Barriers</h3>
+          <p>Girls miss school during menstruation due to lack of sanitary products, creating educational gaps and increasing dropout rates.</p>
+        </div>
+        <div class="challenge-card">
+          <h3>Limited Health Knowledge</h3>
+          <p>Many communities lack information about environmental health risks and disease prevention strategies.</p>
+        </div>
+        <div class="challenge-card">
+          <h3>Infrastructure Gaps</h3>
+          <p>Municipal waste systems are inadequate or absent, leaving communities without sustainable solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach Section -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Our Approach</h2>
+      <div class="grid grid-2">
+        <div>
+          <img src={`${base}images/school-program.jpg`} alt="School program" />
+        </div>
+        <div>
+          <h3>Community-Led Solutions</h3>
+          <p>We don't impose solutions. We work with communities to identify needs, recruit local volunteers, and build capacity for sustainable action.</p>
+          
+          <h3>Evidence-Based Programming</h3>
+          <p>Every program is designed around measurable outcomes. We track impact data and adjust strategies based on what works.</p>
+          
+          <h3>Integrated Impact</h3>
+          <p>Our three core programs reinforce each other—cleanup volunteers spread health messages, education reduces stigma around sanitary products, and all programs build toward policy change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <h2 class="text-center mb-2">Our Values</h2>
+      <div class="grid grid-2">
+        <div class="value-card">
+          <h3>Community First</h3>
+          <p>Local volunteers lead our programs. We provide support, but the work belongs to communities.</p>
+        </div>
+        <div class="value-card">
+          <h3>Measurable Impact</h3>
+          <p>We track outcomes rigorously and share data transparently. Every claim we make is backed by evidence.</p>
+        </div>
+        <div class="value-card">
+          <h3>Sustainable Solutions</h3>
+          <p>We build capacity that outlasts our direct involvement. Programs continue through trained local leaders.</p>
+        </div>
+        <div class="value-card">
+          <h3>Dignity and Respect</h3>
+          <p>We treat every person and community with dignity. Solutions are developed with people, not for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stats -->
+  <section class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-2">Impact Snapshot</h2>
+      <div class="grid grid-3">
+        <div class="stat-card">
+          <span class="stat-number">2,000+</span>
+          <span class="stat-label">Volunteers Mobilized</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5,000+</span>
+          <span class="stat-label">Students Supported</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Tons Removed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100,000+</span>
+          <span class="stat-label">People Reached</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Absence Reduction</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Partner Schools</span>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href={`${base}impact`} class="btn">See Full Impact Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container text-center">
+      <h2>Meet Our Team</h2>
+      <img src={`${base}images/dila-team.jpg`} alt="Dila team" style="max-width: 800px; margin: 2rem auto; display: block;" />
+      <p style="max-width: 700px; margin: 0 auto;">Our team brings together expertise in public health, environmental science, education, and community organizing. But our real strength comes from the 2,000+ volunteers who lead programs in their own communities.</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-4">
+    <div class="container text-center">
+      <h2>Join Our Mission</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">
+        Learn more about our programs or find ways to get involved.
+      </p>
+      <div class="cta-buttons">
+        <a href={`${base}programs`}>Our Programs</a>
+        <a href={`${base}impact`}>Our Impact</a>
+        <a href={`${base}get-involved`}>Get Involved</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+  }
+
+  .about-grid-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .about-grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .about-grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .challenge-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--dila-blue);
+  }
+
+  .challenge-card h3 {
+    color: var(--dila-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+  }
+
+  .value-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 4px 20px rgba(0, 243, 255, 0.2);
+  }
+
+  .value-card h3 {
+    color: var(--dila-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .cta-buttons a {
+    padding: 12px 32px;
+    background: var(--dila-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .cta-buttons a:hover {
+    background: var(--cyan);
+    color: var(--dark-navy);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+</style>

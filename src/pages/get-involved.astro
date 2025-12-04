@@ -1,0 +1,549 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout 
+  title="Get Involved with Dila"
+  description="Join Dila's mission to improve environmental health in Somaliland. Volunteer, donate, or partner with us to create lasting change."
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get Involved</h1>
+      <p class="hero-subtitle">Whether you're in Somaliland, part of the diaspora, or an international supporter, there are many ways to contribute to healthier communities in East Africa.</p>
+    </div>
+  </section>
+
+  <!-- Hero Navigation -->
+  <section style="background: var(--light-blue-bg); padding: 2rem 0;">
+    <div class="container">
+      <div class="hero-nav">
+        <a href="#volunteer">Volunteer</a>
+        <a href="#donate">Donate</a>
+        <a href="#partners">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="py-4">
+    <div class="container">
+      <div class="section-header">
+        <h2>Volunteer With Dila</h2>
+        <p>Join our network of dedicated volunteers creating lasting change</p>
+      </div>
+
+      <div class="volunteer-grid">
+        <!-- Local Volunteers -->
+        <div class="volunteer-card">
+          <span class="icon">🇸🇴</span>
+          <h3>Local Volunteers</h3>
+          <p><strong>In Somaliland</strong></p>
+          
+          <p>Join hands-on work in your community through cleanup events, education sessions, and school support programs.</p>
+          
+          <ul class="styled-list">
+            <li>Lead cleanup events in your neighborhood</li>
+            <li>Deliver health education workshops</li>
+            <li>Support school sanitary product distribution</li>
+            <li>Help with administrative tasks</li>
+          </ul>
+          
+          <div class="info-box">
+            <strong>Requirements:</strong> Physical ability for outdoor work, commitment to safety protocols, availability for monthly events
+          </div>
+          
+          <div class="info-box">
+            <strong>We Provide:</strong> Safety training, equipment, transportation to events, meals during events, volunteer certificates
+          </div>
+          
+          <a href="mailto:volunteer@dilacares.org" class="btn mt-2">Apply to Volunteer</a>
+        </div>
+
+        <!-- Diaspora Volunteers -->
+        <div class="volunteer-card">
+          <span class="icon">🌍</span>
+          <h3>Diaspora Volunteers</h3>
+          <p><strong>From Anywhere</strong></p>
+          
+          <p>Support Dila's mission from abroad through fundraising, advocacy, and professional expertise.</p>
+          
+          <ul class="styled-list">
+            <li>Organize diaspora fundraising events</li>
+            <li>Manage social media campaigns</li>
+            <li>Provide pro-bono professional services</li>
+            <li>Coordinate community awareness events</li>
+            <li>Translate materials to local languages</li>
+          </ul>
+          
+          <div class="info-box">
+            <strong>Time Commitment:</strong> Flexible, project-based opportunities ranging from 5-20 hours per month
+          </div>
+          
+          <div class="info-box">
+            <strong>Special Skills Welcome:</strong> Marketing, graphic design, event planning, grant writing, translation
+          </div>
+          
+          <a href="mailto:diaspora@dilacares.org" class="btn mt-2">Get Involved</a>
+        </div>
+
+        <!-- International Volunteers -->
+        <div class="volunteer-card">
+          <span class="icon">🌐</span>
+          <h3>International Volunteers</h3>
+          <p><strong>Global Expertise</strong></p>
+          
+          <p>Contribute specialized skills to strengthen our programs and organizational capacity.</p>
+          
+          <ul class="styled-list">
+            <li>Grant writing and fundraising strategy</li>
+            <li>Public health program design</li>
+            <li>Environmental engineering consultation</li>
+            <li>Communications and storytelling</li>
+            <li>Monitoring and evaluation systems</li>
+          </ul>
+          
+          <div class="info-box">
+            <strong>Ideal For:</strong> Professionals in public health, environmental science, nonprofit management, communications, data analysis
+          </div>
+          
+          <div class="info-box">
+            <strong>Commitment:</strong> 3-6 month projects with flexible scheduling
+          </div>
+          
+          <a href="mailto:international@dilacares.org" class="btn mt-2">Offer Your Expertise</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator" />
+
+  <!-- Donate Section -->
+  <section id="donate" class="py-4">
+    <div class="container">
+      <div class="section-header">
+        <h2>Support Our Work</h2>
+        <p>Your donation directly funds programs creating healthier communities</p>
+      </div>
+
+      <p class="text-center" style="font-size: 1.1rem; margin-bottom: 2rem;">
+        Every contribution makes a measurable difference. See exactly how your donation creates impact:
+      </p>
+
+      <div class="donation-grid">
+        <div class="donation-card">
+          <span class="donation-amount">$25</span>
+          <strong>Support One Student</strong>
+          <p>Provides sanitary products for one student for an entire year</p>
+        </div>
+
+        <div class="donation-card">
+          <span class="donation-amount">$50</span>
+          <strong>Equip a Team</strong>
+          <p>Supplies safety equipment and tools for one cleanup event</p>
+        </div>
+
+        <div class="donation-card">
+          <span class="donation-amount">$100</span>
+          <strong>Fund a Workshop</strong>
+          <p>Delivers one community health education session for 50 people</p>
+        </div>
+
+        <div class="donation-card">
+          <span class="donation-amount">$250</span>
+          <strong>Support a School</strong>
+          <p>Provides products for one school for one month</p>
+        </div>
+
+        <div class="donation-card">
+          <span class="donation-amount">$500</span>
+          <strong>Equipment Package</strong>
+          <p>Purchases reusable cleanup equipment for volunteer team</p>
+        </div>
+
+        <div class="donation-card">
+          <span class="donation-amount">$1,000</span>
+          <strong>Major Cleanup Event</strong>
+          <p>Funds large-scale community transformation project</p>
+        </div>
+      </div>
+
+      <!-- Monthly Giving -->
+      <div class="highlight-box">
+        <h3 style="color: var(--dila-blue); margin-top: 0;">Monthly Giving: Join the Sustainer Circle</h3>
+        <p style="margin-bottom: 1.5rem;">Recurring donations provide stable funding for ongoing program operations</p>
+        
+        <p><strong>$10/month</strong> - Supports one student year-round</p>
+        <p><strong>$25/month</strong> - Funds weekly community education</p>
+        <p><strong>$50/month</strong> - Equips volunteer teams monthly</p>
+        <p><strong>$100+/month</strong> - Sustains comprehensive programming</p>
+        
+        <a href="#" class="btn mt-2">Become a Sustainer</a>
+      </div>
+
+      <!-- Other Ways to Give -->
+      <h3 class="text-center mt-2" style="color: var(--dila-blue);">Other Ways to Give</h3>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Corporate Matching</h3>
+          <p>Double your impact if your employer matches charitable donations. Check with your HR department about matching gift programs.</p>
+          <a href="mailto:corporate@dilacares.org" class="btn-secondary mt-2">Learn More</a>
+        </div>
+
+        <div class="card">
+          <h3>Donor-Advised Funds</h3>
+          <p>Recommend a grant from your DAF to maximize tax benefits and support our mission.</p>
+          <p><strong>EIN:</strong> [Your EIN Here]</p>
+        </div>
+
+        <div class="card">
+          <h3>Legacy Giving</h3>
+          <p>Include Dila in your estate planning to create lasting impact for future generations.</p>
+          <a href="mailto:development@dilacares.org" class="btn-secondary mt-2">Plan Your Legacy</a>
+        </div>
+
+        <div class="card">
+          <h3>In-Kind Donations</h3>
+          <p>Donate supplies, equipment, or services. We always need cleanup tools, safety equipment, and educational materials.</p>
+          <a href="mailto:donations@dilacares.org" class="btn-secondary mt-2">Donate Items</a>
+        </div>
+      </div>
+
+      <div class="info-box text-center mt-2">
+        <strong>Tax Deductible:</strong> Dila is a registered 501(c)(3) nonprofit organization. EIN: [Your EIN Number]<br>
+        All donations are tax-deductible to the full extent allowed by law.
+      </div>
+
+      <div class="text-center mt-2">
+        <a href="#" class="btn" style="font-size: 1.2rem; padding: 18px 48px;">Make a Donation</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator" />
+
+  <!-- Partner Section -->
+  <section id="partners" class="py-4">
+    <div class="container">
+      <div class="section-header">
+        <h2>Partner With Dila</h2>
+        <p>Collaborate with us to amplify impact and reach more communities</p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- School Partnerships -->
+        <div class="partner-card">
+          <h3>🏫 School Partnerships</h3>
+          
+          <p><strong>What We Offer:</strong></p>
+          <ul class="styled-list">
+            <li>Free sanitary product delivery</li>
+            <li>Health education for students</li>
+            <li>Teacher training on distribution</li>
+            <li>Advocacy for improved facilities</li>
+          </ul>
+          
+          <p><strong>What We Need:</strong></p>
+          <ul class="styled-list">
+            <li>Commitment to student privacy</li>
+            <li>Designated program coordinator</li>
+            <li>Participation in impact measurement</li>
+          </ul>
+          
+          <a href="mailto:schools@dilacares.org" class="btn mt-2">Partner With Us</a>
+        </div>
+
+        <!-- NGO Collaborations -->
+        <div class="partner-card">
+          <h3>🤝 NGO Collaborations</h3>
+          
+          <p><strong>Partnership Opportunities:</strong></p>
+          <ul class="styled-list">
+            <li>Joint program implementation</li>
+            <li>Shared resource utilization</li>
+            <li>Coordinated advocacy efforts</li>
+            <li>Collaborative research projects</li>
+          </ul>
+          
+          <p><strong>Ideal Partners:</strong> Organizations working in health, education, environment, or community development in East Africa</p>
+          
+          <a href="mailto:partnerships@dilacares.org" class="btn mt-2">Explore Collaboration</a>
+        </div>
+
+        <!-- Municipal Partnerships -->
+        <div class="partner-card">
+          <h3>🏛️ Municipal Partnerships</h3>
+          
+          <p><strong>We Can Help With:</strong></p>
+          <ul class="styled-list">
+            <li>Waste management system design</li>
+            <li>Community health initiatives</li>
+            <li>Evidence-based policy recommendations</li>
+            <li>Public education campaigns</li>
+          </ul>
+          
+          <p><strong>For:</strong> Municipal leaders, health departments, environmental agencies seeking community-based solutions</p>
+          
+          <a href="mailto:government@dilacares.org" class="btn mt-2">Connect With Us</a>
+        </div>
+
+        <!-- Corporate Partnerships -->
+        <div class="partner-card">
+          <h3>💼 Corporate Partnerships</h3>
+          
+          <p><strong>Engagement Options:</strong></p>
+          <ul class="styled-list">
+            <li>Event sponsorship opportunities</li>
+            <li>Employee volunteer programs</li>
+            <li>In-kind product donations</li>
+            <li>Cause marketing campaigns</li>
+          </ul>
+          
+          <p><strong>Benefits:</strong> Brand visibility, CSR impact, employee engagement, measurable social impact</p>
+          
+          <a href="mailto:corporate@dilacares.org" class="btn mt-2">Discuss Partnership</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator" />
+
+  <!-- Stay Connected Section -->
+  <section class="py-4" style="background: var(--light-blue-bg);">
+    <div class="container">
+      <div class="highlight-box">
+        <h2 style="color: var(--dila-blue); margin-top: 0;">Stay Connected</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Get updates on our programs, success stories, and ways to help</p>
+        
+        <form style="max-width: 500px; margin: 0 auto;">
+          <input type="email" placeholder="Your email address" style="width: 100%; padding: 14px; border: 2px solid var(--dila-blue); border-radius: 6px; font-size: 1rem; margin-bottom: 1rem;">
+          <button type="submit" class="btn" style="width: 100%;">Subscribe to Newsletter</button>
+        </form>
+        
+        <div style="margin-top: 2rem;">
+          <p><strong>Follow us on social media:</strong></p>
+          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+            <a href="#" style="color: var(--dila-blue); font-size: 1.2rem; font-weight: 600;">Facebook</a>
+            <a href="#" style="color: var(--dila-blue); font-size: 1.2rem; font-weight: 600;">Twitter</a>
+            <a href="#" style="color: var(--dila-blue); font-size: 1.2rem; font-weight: 600;">Instagram</a>
+            <a href="#" style="color: var(--dila-blue); font-size: 1.2rem; font-weight: 600;">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--dark-navy) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hero-nav a {
+    padding: 14px 32px;
+    background: var(--dila-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(19, 93, 244, 0.3);
+  }
+
+  .hero-nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 243, 255, 0.5);
+    background: var(--cyan);
+    color: var(--dark-navy);
+  }
+
+  .section-header {
+    background: linear-gradient(135deg, var(--dila-blue) 0%, var(--cyan) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 4rem 0 2rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(19, 93, 244, 0.3);
+  }
+
+  .section-header h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .section-header p {
+    margin: 0;
+    font-size: 1.2rem;
+    opacity: 0.95;
+  }
+
+  .volunteer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .volunteer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .volunteer-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .volunteer-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .volunteer-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 8px 30px rgba(0, 243, 255, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .volunteer-card h3 {
+    color: var(--dila-blue);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .volunteer-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .donation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 640px) {
+    .donation-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .donation-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .donation-card {
+    background: var(--light-blue-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-left: 5px solid var(--dila-blue);
+    transition: all 0.3s ease;
+  }
+
+  .donation-card:hover {
+    background: white;
+    border-left-color: var(--cyan);
+    box-shadow: 0 6px 20px rgba(0, 243, 255, 0.2);
+    transform: translateX(5px);
+  }
+
+  .donation-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dila-blue);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .partner-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+  }
+
+  .partner-card:hover {
+    border-color: var(--dila-blue);
+    box-shadow: 0 8px 25px rgba(19, 93, 244, 0.15);
+  }
+
+  .partner-card h3 {
+    color: var(--dila-blue);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 12px 28px;
+    background: white;
+    color: var(--dila-blue);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--dila-blue);
+  }
+
+  .btn-secondary:hover {
+    background: var(--dila-blue);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

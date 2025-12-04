@@ -1,0 +1,306 @@
+/* Dila Global Styles */
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* CSS Variables - Dila Brand Colors */
+:root {
+  --dila-blue: #135DF4;
+  --cyan: #00F3FF;
+  --dark-navy: #0a0e27;
+  --light-blue-bg: #f5f9ff;
+  --white: #ffffff;
+  --text-dark: #333333;
+  --gray: #666666;
+  --light-gray: #e0e0e0;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--dila-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: var(--dila-blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--cyan);
+  color: var(--dark-navy);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 243, 255, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--dila-blue);
+  border: 2px solid var(--dila-blue);
+}
+
+.btn-secondary:hover {
+  background: var(--dila-blue);
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid var(--light-gray);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 8px 30px rgba(0, 243, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Grid Layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Section Headers */
+.section-header {
+  background: linear-gradient(135deg, var(--dila-blue) 0%, var(--cyan) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 4rem 0 2rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(19, 93, 244, 0.3);
+}
+
+.section-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.section-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Info Boxes */
+.info-box {
+  background: var(--light-blue-bg);
+  border-left: 4px solid var(--cyan);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(19, 93, 244, 0.1) 0%, rgba(0, 243, 255, 0.1) 100%);
+  border: 2px solid var(--cyan);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Lists */
+.styled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.styled-list li {
+  padding-left: 2rem;
+  margin: 0.75rem 0;
+  position: relative;
+}
+
+.styled-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Separator */
+.separator {
+  height: 4px;
+  background: linear-gradient(90deg, var(--dila-blue) 0%, var(--cyan) 100%);
+  border: none;
+  margin: 4rem 0;
+  border-radius: 2px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: var(--light-blue-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border-top: 4px solid var(--dila-blue);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dila-blue);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}

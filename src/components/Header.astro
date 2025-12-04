@@ -1,0 +1,147 @@
+---
+const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
+---
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href={base}>
+          <img src={`${base}images/logo.png`} alt="Dila" class="logo-img" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href={`${base}about`} class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
+        <li><a href={`${base}programs`} class={currentPath.includes('/programs') ? 'active' : ''}>Programs</a></li>
+        <li><a href={`${base}impact`} class={currentPath.includes('/impact') ? 'active' : ''}>Impact</a></li>
+        <li><a href={`${base}get-involved`} class={currentPath.includes('/get-involved') ? 'active' : ''}>Get Involved</a></li>
+        <li><a href={`${base}blog`} class={currentPath.includes('/blog') ? 'active' : ''}>Blog</a></li>
+        <li><a href={`${base}contact`} class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    background: var(--dark-navy);
+    border-bottom: 2px solid var(--cyan);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+  }
+
+  .menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu a.active {
+    background: var(--dila-blue);
+    color: white;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      flex-direction: column;
+      background: var(--dark-navy);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+      padding: 2rem 0;
+      gap: 0;
+    }
+
+    .nav-menu li {
+      width: 100%;
+    }
+
+    .nav-menu a {
+      display: block;
+      padding: 1rem;
+    }
+
+    .menu-toggle:checked ~ .nav-menu {
+      left: 0;
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+</style>
