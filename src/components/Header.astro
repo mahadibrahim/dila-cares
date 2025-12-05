@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL;
       <!-- Logo -->
       <div class="logo">
         <a href={base}>
-          <img src={`${base}images/logo.png`} alt="Dila" class="logo-img" />
+          <img src={`${base}/images/logo.png`} alt="Dila" class="logo-img" />
         </a>
       </div>
 
@@ -23,12 +23,12 @@ const base = import.meta.env.BASE_URL;
 
       <!-- Navigation Menu -->
       <ul class="nav-menu">
-        <li><a href={`${base}about`} class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
-        <li><a href={`${base}programs`} class={currentPath.includes('/programs') ? 'active' : ''}>Programs</a></li>
-        <li><a href={`${base}impact`} class={currentPath.includes('/impact') ? 'active' : ''}>Impact</a></li>
-        <li><a href={`${base}get-involved`} class={currentPath.includes('/get-involved') ? 'active' : ''}>Get Involved</a></li>
-        <li><a href={`${base}blog`} class={currentPath.includes('/blog') ? 'active' : ''}>Blog</a></li>
-        <li><a href={`${base}contact`} class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
+        <li><a href={`${base}/about`} class={currentPath.includes('/about') ? 'active' : ''}>About</a></li>
+        <li><a href={`${base}/programs`} class={currentPath.includes('/programs') ? 'active' : ''}>Programs</a></li>
+        <li><a href={`${base}/impact`} class={currentPath.includes('/impact') ? 'active' : ''}>Impact</a></li>
+        <li><a href={`${base}/get-involved`} class={currentPath.includes('/get-involved') ? 'active' : ''}>Get Involved</a></li>
+        <li><a href={`${base}/blog`} class={currentPath.includes('/blog') ? 'active' : ''}>Blog</a></li>
+        <li><a href={`${base}/contact`} class={currentPath.includes('/contact') ? 'active' : ''}>Contact</a></li>
       </ul>
     </div>
   </nav>
