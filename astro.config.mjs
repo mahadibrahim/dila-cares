@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://mahadibrahim.github.io',
-  //base: '/dila-astro',
+  base: '/dila-cares',
   integrations: [sitemap()],
   output: 'static'
 });
